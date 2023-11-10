@@ -19,7 +19,7 @@ const NavBar = () => {
                         {navOptions}
                     </ul>
                     </div>
-                    <Link className=" text-white text-lg md:text-2xl lg:text-3xl font-bold">Bistro Boss</Link>
+                    <Link className=" cinzel text-white text-lg md:text-2xl lg:text-3xl font-bold">Bistro Boss</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
