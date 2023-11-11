@@ -18,7 +18,7 @@ const PopularMenu = () => {
     // console.log(menu);
 
     return (
-        <section>
+        <section className="mb-10">
             <SectionTitle
                 heading="Form Our Menu"
                 subHeading="Popular Items"
