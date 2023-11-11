@@ -30,23 +30,23 @@ const Category = () => {
             >
                 <SwiperSlide>
                     <img src={slide1} alt="" />
-                    <h3 className=' text-white cinzel -mt-16 text-3xl font-medium uppercase text-center '>Salads</h3>
+                    <h3 className=' text-white cinzel -mt-16 text-2xl lg:text-3xl font-medium uppercase text-center '>Salads</h3>
                 </SwiperSlide>
                 <SwiperSlide>                
                     <img src={slide2} alt="" />
-                    <h3 className=' text-white cinzel -mt-16 text-3xl font-medium uppercase text-center '>Soups</h3>
+                    <h3 className=' text-white cinzel -mt-16 text-2xl lg:text-3xl font-medium uppercase text-center '>Soups</h3>
                 </SwiperSlide>
                 <SwiperSlide>                
                     <img src={slide3} alt="" />
-                    <h3 className=' text-white cinzel -mt-16 text-3xl font-medium uppercase text-center '>pizzas</h3>
+                    <h3 className=' text-white cinzel -mt-16 text-2xl lg:text-3xl font-medium uppercase text-center '>pizzas</h3>
                 </SwiperSlide>
                 <SwiperSlide>                
                     <img src={slide4} alt="" />
-                    <h3 className=' text-white cinzel -mt-16 text-3xl font-medium uppercase text-center '>desserts</h3>
+                    <h3 className=' text-white cinzel -mt-16 text-2xl lg:text-3xl font-medium uppercase text-center '>desserts</h3>
                 </SwiperSlide>
                 <SwiperSlide>                
                     <img src={slide5} alt="" />
-                    <h3 className=' text-white cinzel -mt-16 text-3xl font-medium uppercase text-center '>Salads</h3>
+                    <h3 className=' text-white cinzel -mt-16 text-2xl lg:text-3xl font-medium uppercase text-center '>Salads</h3>
                 </SwiperSlide>
             </Swiper>
         </>

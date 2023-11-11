@@ -40,7 +40,7 @@ const Testimonials = () => {
                             <i className=' text-8xl bx bxs-quote-left'></i>
                             <p className="font-normal text-base">{review?.details}</p>
                             {/* <small>{review?.details}</small> */}
-                            <h3 className="text-[#CD9003] font-medium text-2xl lg:text-3xl">{review?.name}</h3>
+                            <h3 className="text-[#CD9003] font-medium text-2xl lg:text-3xl cinzel">{review?.name}</h3>
                         </div>
                     </SwiperSlide>)
                 }
