@@ -20,7 +20,7 @@ const Testimonials = () => {
             setReviews(data);
         })
     }, []);
-    console.log(reviews);
+    // console.log(reviews);
 
     return (
         <section className="my-10">
