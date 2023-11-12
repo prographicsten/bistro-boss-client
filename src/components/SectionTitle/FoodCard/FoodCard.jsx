@@ -10,11 +10,11 @@ const FoodCard = ({item}) => {
             <div className='relative'>
                 <div className='relative'>
                     <img className=" rounded-tl-lg rounded-tr-lg  w-full h-[230px] md:h-[300px]" src={image} alt="" />
-                    <h4 className=" absolute rounded-lg bg-black py-1 px-3 bottom-5 left-5 text-red-500 font-semibold capitalize">{category}</h4>
+                    <h4 className=" absolute cinzel rounded-lg bg-black py-1 px-3 bottom-5 left-5 text-white font-semibold capitalize">{category}</h4>
                 </div>
                 <div className=" rounded-bl-lg rounded-br-lg space-y-4 bg-[#F3F3F3] p-4 md:p-8 text-center">
                     <div className="space-y-2 text-[#151515] font-normal">
-                    <h4 className="text-[#151515] text-lg font-semibold">{name}</h4>
+                    <h4 className="text-[#151515] text-lg font-semibold cinzel">{name}</h4>
                     <p>{
                         recipe.length > 60 
                         ? 
