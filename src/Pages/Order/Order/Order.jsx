@@ -10,11 +10,11 @@ const Order = () => {
 
     const [tabIndex, setTabIndex] = useState(0);
     const [menu] = useMenu();
-    // const desserts = menu?.filter(item => item.category === "dessert");
-    // const soup = menu?.filter(item => item.category === "soup");
-    // const pizza = menu?.filter(item => item.category === "pizza");
-    // const salad = menu?.filter(item => item.category === "salad");
-    // const offered = menu?.filter(item => item.category === "offered");
+    const desserts = menu?.filter(item => item.category === "dessert");
+    const soups = menu?.filter(item => item.category === "soup");
+    const pizza = menu?.filter(item => item.category === "pizza");
+    const salad = menu?.filter(item => item.category === "salad");
+    const drinks = menu?.filter(item => item.category === "drinks");
 
     return (
         <div className="text-center">
@@ -33,40 +33,35 @@ const Order = () => {
             <TabPanel>
                 <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
                 {
-                    // menu?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                    menu?.filter(item => item.category === "salad")?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
+                    salad?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
                 }
                 </div>
             </TabPanel>
             <TabPanel>
                 <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
                 {
-                    // menu?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                    menu?.filter(item => item.category === "pizza")?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
+                    pizza?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
                 }
                 </div>
             </TabPanel>
             <TabPanel>
                 <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
                 {
-                    // menu?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                    menu?.filter(item => item.category === "soup")?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
+                    soups?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
                 }
                 </div>
             </TabPanel>
             <TabPanel>
                 <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
                 {
-                    // menu?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                    menu?.filter(item => item.category === "dessert")?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
+                    desserts?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
                 }
                 </div>
             </TabPanel>
             <TabPanel>
                 <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
                 {
-                    // menu?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                    menu?.filter(item => item.category === "drinks")?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
+                    drinks?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
                 }
                 </div>
             </TabPanel>
