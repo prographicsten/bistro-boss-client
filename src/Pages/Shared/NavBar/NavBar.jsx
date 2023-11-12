@@ -1,10 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
 
     const navOptions = <>
-        <li><Link className=" lg:text-white hover:text-red-600 lg:font-medium">Item 1</Link></li>
-        <li><Link className=" lg:text-white hover:text-red-600 lg:font-medium">Item 3</Link></li>
+        <NavLink
+        to="/"
+        className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "bg-[#5dff33] text-black py-1 px-7 rounded-tl-xl rounded-br-xl   hover:text-white hover:bg-orange-400 hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-xl hover:rounded-bl-xl " : " text-white "
+        }
+        >
+        Home
+        </NavLink>
+
+        <NavLink
+        to="/menu"
+        className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "bg-[#5dff33] text-black py-1 px-7 rounded-tl-xl rounded-br-xl   hover:text-white hover:bg-orange-400 hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-xl hover:rounded-bl-xl " : " text-white "
+        }
+        >
+        Our Menu
+        </NavLink>
+        
     </>
 
     return (
