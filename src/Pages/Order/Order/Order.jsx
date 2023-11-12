@@ -21,6 +21,7 @@ const Order = () => {
             <Cover img={orderCover} title="Order Food"></Cover>
             <div className="mt-10 capitalize">
             <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+            <div className="scroll-x">
             <TabList>
                 <Tab>Salad</Tab>
                 <Tab>pizza</Tab>
@@ -28,6 +29,7 @@ const Order = () => {
                 <Tab>desserts</Tab>
                 <Tab>drinks</Tab>
             </TabList>
+            </div>
             <TabPanel>
                 <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
                 {

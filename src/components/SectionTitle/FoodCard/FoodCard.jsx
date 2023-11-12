@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const FoodCard = ({item}) => {
 
@@ -17,7 +18,9 @@ const FoodCard = ({item}) => {
                     <p>{
                         recipe.length > 60 
                         ? 
-                        recipe.slice(0, 60)
+                        <>{recipe.slice(0, 60)}...
+                        <Link className='text-blue-600'> <small className='font-bold'>Read more</small></Link>
+                        </>
                         : 
                         recipe
                     }
