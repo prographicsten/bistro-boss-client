@@ -16,10 +16,10 @@ const MenuCategory = ({items, title, img}) => {
     );
 };
 
-MenuCategory.items = {
-    items: PropTypes.object.isRequired,
-    title: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired,
+MenuCategory.propTypes = {
+    items: PropTypes.array.isRequired,
+    title: PropTypes.string,
+    img: PropTypes.string,
 };
 
 export default MenuCategory;

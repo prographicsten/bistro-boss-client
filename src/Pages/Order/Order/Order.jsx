@@ -4,7 +4,7 @@ import Cover from "../../Shared/Cover/Cover";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import useMenu from "../../../hooks/useMenu";
-import FoodCard from "../../../components/SectionTitle/FoodCard/FoodCard";
+import OrderTab from "./OrderTab/OrderTab";
 
 const Order = () => {
 
@@ -31,39 +31,23 @@ const Order = () => {
             </TabList>
             </div>
             <TabPanel>
-                <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
-                {
-                    salad?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                }
-                </div>
+                <OrderTab items={salad}></OrderTab>
             </TabPanel>
+
             <TabPanel>
-                <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
-                {
-                    pizza?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                }
-                </div>
+                <OrderTab items={pizza}></OrderTab>
             </TabPanel>
+
             <TabPanel>
-                <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
-                {
-                    soups?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                }
-                </div>
+                <OrderTab items={soups}></OrderTab>
             </TabPanel>
+
             <TabPanel>
-                <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
-                {
-                    desserts?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                }
-                </div>
+                <OrderTab items={desserts}></OrderTab>
             </TabPanel>
+            
             <TabPanel>
-                <div className="px-2 md:px-3 lg:px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
-                {
-                    drinks?.map(item => <FoodCard key={item._id} item={item}></FoodCard>)
-                }
-                </div>
+                <OrderTab items={drinks}></OrderTab>
             </TabPanel>
             </Tabs>
             </div>
