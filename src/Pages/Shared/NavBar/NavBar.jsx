@@ -6,7 +6,7 @@ const NavBar = () => {
         <NavLink
         to="/"
         className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#5dff33] text-black py-1 px-7 rounded-tl-xl rounded-br-xl   hover:text-white hover:bg-orange-400 hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-xl hover:rounded-bl-xl " : " text-white "
+            isPending ? "pending" : isActive ? "bg-[#5dff33] text-black py-1 px-7 rounded-tl-xl rounded-br-xl   hover:text-white hover:bg-orange-400 hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-xl hover:rounded-bl-xl " : " text-white mr-5 ml-5"
         }
         >
         Home
@@ -15,10 +15,19 @@ const NavBar = () => {
         <NavLink
         to="/menu"
         className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#5dff33] text-black py-1 px-7 rounded-tl-xl rounded-br-xl   hover:text-white hover:bg-orange-400 hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-xl hover:rounded-bl-xl " : " text-white "
+            isPending ? "pending" : isActive ? "bg-[#5dff33] text-black py-1 px-7 rounded-tl-xl rounded-br-xl   hover:text-white hover:bg-orange-400 hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-xl hover:rounded-bl-xl " : " text-white mr-5 ml-5"
         }
         >
         Our Menu
+        </NavLink>
+
+        <NavLink
+        to="/order"
+        className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "bg-[#5dff33] text-black py-1 px-7 rounded-tl-xl rounded-br-xl   hover:text-white hover:bg-orange-400 hover:rounded-tl-none hover:rounded-br-none hover:rounded-tr-xl hover:rounded-bl-xl " : " text-white mr-5 ml-5"
+        }
+        >
+        Our Order
         </NavLink>
         
     </>
@@ -32,7 +41,7 @@ const NavBar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className=" space-y-1 menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        {navOptions}
+                        {navOptions}mr-5 ml-5
                     </ul>
                     </div>
                     <Link className=" cinzel text-white text-lg md:text-2xl lg:text-3xl font-bold">Bistro Boss</Link>

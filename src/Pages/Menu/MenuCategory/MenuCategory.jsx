@@ -8,6 +8,7 @@ const MenuCategory = ({items, title, img}) => {
             { title && <Cover img={img} title={title}></Cover>}
             <div className=" grid grid-cols-1 lg:grid-cols-2 gap-5 px-4 md:px-5 xl:px-0 my-16">
                 {
+                    // eslint-disable-next-line react/prop-types
                     items?.map(item => <MenuItem key={item._id} item={item}></MenuItem>)
                 }
             </div>
@@ -16,9 +17,9 @@ const MenuCategory = ({items, title, img}) => {
 };
 
 MenuCategory.items = {
-    items: PropTypes.any,
-    title: PropTypes.string,
-    img: PropTypes.any,
+    items: PropTypes.object.isRequired,
+    title: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
 };
 
 export default MenuCategory;
