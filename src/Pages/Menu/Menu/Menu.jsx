@@ -5,6 +5,7 @@ import dessertImg from "../../../assets/menu/dessert-bg.jpeg";
 import pizzatImg from "../../../assets/menu/pizza-bg.jpg";
 import saladtImg from "../../../assets/menu/salad-bg.jpg";
 import souptImg from "../../../assets/menu/soup-bg.jpg";
+import drinksImg from "../../../assets/menu/pizza-bg.jpg";
 import useMenu from "../../../hooks/useMenu";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import MenuCategory from "../MenuCategory/MenuCategory";
@@ -16,6 +17,7 @@ const Menu = () => {
     const soup = menu?.filter(item => item.category === "soup");
     const pizza = menu?.filter(item => item.category === "pizza");
     const salad = menu?.filter(item => item.category === "salad");
+    const drinks = menu?.filter(item => item.category === "drinks");
     const offered = menu?.filter(item => item.category === "offered");
 
     return (
@@ -30,15 +32,17 @@ const Menu = () => {
                 subHeading="Don't miss"
             />
             {/* offered menu items */}
-            <MenuCategory items={offered}  title="Offered" img={menuImg}></MenuCategory>
+            <MenuCategory items={offered}  title="offered" img={menuImg}></MenuCategory>
             {/* desser menu items */}
-            <MenuCategory items={desserts} title="Dessert" img={dessertImg}></MenuCategory>
+            <MenuCategory items={desserts} title="desserts" img={dessertImg}></MenuCategory>
             {/* pizza */}
-            <MenuCategory items={pizza} title="Pizza" img={pizzatImg}></MenuCategory>
+            <MenuCategory items={pizza} title="pizza" img={pizzatImg}></MenuCategory>
             {/* salad */}
-            <MenuCategory items={salad} title="Salad" img={saladtImg}></MenuCategory>
+            <MenuCategory items={salad} title="salad" img={saladtImg}></MenuCategory>
             {/* soup */}
-            <MenuCategory items={soup} title="Soup" img={souptImg}></MenuCategory>
+            <MenuCategory items={soup} title="soup" img={souptImg}></MenuCategory>
+            {/* drinks */}
+            <MenuCategory items={drinks} title="drinks" img={drinksImg}></MenuCategory>
         </div>
     );
 };
